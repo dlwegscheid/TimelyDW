@@ -1,0 +1,70 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "dlwegscheid@gmail.com",
+    "longName": "TimelyDW",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/charging.png",
+                "name": "CHARGING",
+                "type": "png"
+            },
+            {
+                "file": "images/battery_100.png",
+                "name": "BATTERY_100",
+                "type": "png"
+            },
+            {
+                "file": "images/battery_80.png",
+                "name": "BATTERY_80",
+                "type": "png"
+            },
+            {
+                "file": "images/battery_60.png",
+                "name": "BATTERY_60",
+                "type": "png"
+            },
+            {
+                "file": "images/battery_40.png",
+                "name": "BATTERY_40",
+                "type": "png"
+            },
+            {
+                "file": "images/battery_20.png",
+                "name": "BATTERY_20",
+                "type": "png"
+            },
+            {
+                "file": "images/battery_0.png",
+                "name": "BATTERY_0",
+                "type": "png"
+            },
+            {
+                "file": "images/bluetooth.png",
+                "name": "BLUETOOTH",
+                "type": "png"
+            },
+            {
+                "file": "images/empty.png",
+                "name": "EMPTY",
+                "type": "png"
+            },
+            {
+                "file": "fonts/futura_condensed_bold-webfont.ttf",
+                "name": "FUTURA_CONDENSED_48",
+                "type": "font"
+            }
+        ]
+    },
+    "shortName": "TimelyDW",
+    "uuid": "2de6b45c-2a09-43cd-9850-8d0b1a6e62b8",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
