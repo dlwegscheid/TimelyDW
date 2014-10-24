@@ -326,6 +326,7 @@ void handle_battery(BatteryChargeState charge) {
 
 }
 
+/*
 static void handle_connection_change(void * data) {
   bool connected = bluetooth_connection_service_peek();
   if (connected == *(bool*)data) {
@@ -339,18 +340,16 @@ static void handle_connection_change(void * data) {
   }
   sTimer = NULL;
 }
+*/
   
 static void handle_bluetooth(bool connected) {
-  if (connected != btStatus) {
-    if (connected == true && !(bitmap_layer_get_bitmap(sBluetoothLayer) == s_res_bluetooth)) {
-      bitmap_layer_set_bitmap(sBluetoothLayer, s_res_bluetooth);
-    }
-    if (connected == false && !(bitmap_layer_get_bitmap(sBluetoothLayer) == s_res_empty)){
-      bitmap_layer_set_bitmap(sBluetoothLayer, s_res_empty);
-    }
-    vibes_short_pulse();
+  if (connected == true && !(bitmap_layer_get_bitmap(sBluetoothLayer) == s_res_bluetooth)) {
+    bitmap_layer_set_bitmap(sBluetoothLayer, s_res_bluetooth);
   }
-  sTimer = NULL;
+  if (connected == false && !(bitmap_layer_get_bitmap(sBluetoothLayer) == s_res_empty)){
+    bitmap_layer_set_bitmap(sBluetoothLayer, s_res_empty);
+  }
+  vibes_short_pulse();
 }
 
 static void handle_window_unload(Window* window) {
